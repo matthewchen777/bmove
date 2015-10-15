@@ -15,30 +15,19 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="277">
+              <block type="movement_leftmotor" id="307" inline="true">
+                <value name="MOVLEFT">
+                  <block type="math_number" id="308">
+                    <field name="NUM">360</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="movement_leftmotor" id="307" inline="true">
-                    <value name="MOVLEFT">
-                      <block type="math_number" id="308">
+                  <block type="movement_rightmotor" id="335" inline="true">
+                    <value name="MOVRIGHT">
+                      <block type="math_number" id="336">
                         <field name="NUM">360</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="movement_stop" id="325">
-                        <next>
-                          <block type="movement_rightmotor" id="335" inline="true">
-                            <value name="MOVRIGHT">
-                              <block type="math_number" id="336">
-                                <field name="NUM">360</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_stop" id="346"></block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
