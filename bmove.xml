@@ -1,33 +1,48 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="661" inline="false" x="-55" y="-51">
-    <field name="MODE">WHILE</field>
+  <block type="controls_whileUntil" id="766" inline="false" x="-48" y="-54">
+    <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="math_arithmetic" id="715" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="math_number" id="716">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="718">
-            <field name="NUM">5</field>
-          </block>
-        </value>
+      <block type="sensor_button" id="725">
+        <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="617">
+      <block type="led_select" id="797" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="823">
+            <field name="NUM">100</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="628" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="629">
-                <field name="NUM">1000</field>
+          <block type="led_select" id="810" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="824">
+                <field name="NUM">100</field>
               </block>
             </value>
+            <next>
+              <block type="robot_delay" id="812" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="830">
+                    <field name="NUM">5000000</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
     </statement>
+  </block>
+  <block type="math_number" id="831" x="357" y="634">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="832" x="377" y="674">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="833" x="397" y="714">
+    <field name="NUM">0</field>
   </block>
 </xml>
