@@ -8,28 +8,32 @@
     <statement name="DO">
       <block type="movement_reverse" id="237">
         <next>
-          <block type="robot_delay" id="254" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="267">
-                <field name="NUM">5000</field>
-              </block>
-            </value>
+          <block type="movement_stop" id="403">
             <next>
-              <block type="movement_leftmotor" id="307" inline="true">
-                <value name="MOVLEFT">
-                  <block type="math_number" id="308">
-                    <field name="NUM">360</field>
+              <block type="robot_delay" id="254" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="267">
+                    <field name="NUM">5000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_rightmotor" id="335" inline="true">
-                    <value name="MOVRIGHT">
-                      <block type="math_number" id="336">
+                  <block type="movement_leftmotor" id="307" inline="true">
+                    <value name="MOVLEFT">
+                      <block type="math_number" id="308">
                         <field name="NUM">360</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="393"></block>
+                      <block type="movement_rightmotor" id="335" inline="true">
+                        <value name="MOVRIGHT">
+                          <block type="math_number" id="336">
+                            <field name="NUM">360</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="393"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
