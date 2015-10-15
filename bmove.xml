@@ -1,5 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1266" x="77" y="-82">
+  <block type="oled_setcursor" id="1284" inline="true" x="77" y="-56">
+    <value name="STARTX">
+      <block type="math_number" id="1285">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="STARTY">
+      <block type="math_number" id="1286">
+        <field name="NUM">10</field>
+      </block>
+    </value>
     <next>
       <block type="oled_drawtext" id="1275">
         <field name="TEXT">6vj6nvtvn6v6</field>
