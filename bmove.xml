@@ -7,45 +7,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="843">
-        <next>
-          <block type="oled_setcursor" id="852" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="853">
-                <field name="NUM">10</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="855">
-                <field name="NUM">10</field>
-              </block>
-            </value>
-            <next>
-              <block type="oled_drawtext" id="873">
-                <field name="TEXT">leftFront</field>
-                <next>
-                  <block type="oled_drawnumber" id="882" inline="true">
-                    <value name="NUMBER">
-                      <block type="sensor_object" id="899">
-                        <field name="OBJECT">LEFTFRONT</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="robot_delay" id="901" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="902">
-                            <field name="NUM">200</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
+      <block type="movement_forward" id="912"></block>
     </statement>
   </block>
 </xml>
