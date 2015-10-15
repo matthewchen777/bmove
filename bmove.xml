@@ -1,3 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1266" x="77" y="-82"></block>
+  <block type="movement_forward" id="1266" x="77" y="-82">
+    <next>
+      <block type="oled_drawtext" id="1275">
+        <field name="TEXT">6vj6nvtvn6v6</field>
+      </block>
+    </next>
+  </block>
 </xml>
