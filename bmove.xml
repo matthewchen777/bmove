@@ -1,7 +1,33 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawnumber" id="600" inline="true" x="-35" y="11">
+  <block type="controls_whileUntil" id="661" inline="false" x="-55" y="-51">
+    <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="math_random" id="607"></block>
+      <block type="math_arithmetic" id="715" inline="true">
+        <field name="OP">ADD</field>
+        <value name="A">
+          <block type="math_number" id="716">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="718">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+      </block>
     </value>
+    <statement name="DO">
+      <block type="movement_forward" id="617">
+        <next>
+          <block type="robot_delay" id="628" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="629">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
   </block>
 </xml>
