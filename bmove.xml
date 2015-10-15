@@ -7,42 +7,45 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="led_select" id="797" inline="true">
-        <field name="ACTION">FLASH</field>
-        <value name="LED">
-          <block type="math_number" id="823">
-            <field name="NUM">0</field>
-          </block>
-        </value>
+      <block type="oled_cleardisplay" id="843">
         <next>
-          <block type="led_select" id="810" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="824">
-                <field name="NUM">5</field>
+          <block type="oled_setcursor" id="852" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="853">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="855">
+                <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="812" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="834">
-                    <field name="NUM">200</field>
+              <block type="oled_drawtext" id="873">
+                <field name="TEXT">leftFront</field>
+                <next>
+                  <block type="oled_drawnumber" id="882" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_object" id="899">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="robot_delay" id="901" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="902">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
     </statement>
-  </block>
-  <block type="math_number" id="831" x="357" y="634">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="832" x="377" y="674">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="833" x="397" y="714">
-    <field name="NUM">0</field>
   </block>
 </xml>
