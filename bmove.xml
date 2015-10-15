@@ -4,17 +4,17 @@
       <block type="oled_setcursor" id="559" inline="true">
         <value name="STARTX">
           <block type="math_number" id="560">
-            <field name="NUM">10</field>
+            <field name="NUM">1000</field>
           </block>
         </value>
         <value name="STARTY">
           <block type="math_number" id="561">
-            <field name="NUM">10</field>
+            <field name="NUM">1000</field>
           </block>
         </value>
         <next>
           <block type="oled_drawtext" id="570">
-            <field name="TEXT">6+5=</field>
+            <field name="TEXT">1234+4321</field>
             <next>
               <block type="oled_drawnumber" id="579" inline="true">
                 <value name="NUMBER">
@@ -22,12 +22,12 @@
                     <field name="OP">ADD</field>
                     <value name="A">
                       <block type="math_number" id="591">
-                        <field name="NUM">5</field>
+                        <field name="NUM">1234</field>
                       </block>
                     </value>
                     <value name="B">
                       <block type="math_number" id="590">
-                        <field name="NUM">6</field>
+                        <field name="NUM">4321</field>
                       </block>
                     </value>
                   </block>
