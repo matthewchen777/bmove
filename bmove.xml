@@ -1,11 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="766" inline="false" x="-48" y="-54">
-    <field name="MODE">UNTIL</field>
+  <block type="controls_whileUntil" id="1116" inline="false" x="-11" y="-104">
+    <field name="MODE">WHILE</field>
     <statement name="DO">
-      <block type="oled_linerect" id="1088">
-        <field name="OBJECT">LINE</field>
+      <block type="oled_drawtext" id="1131">
+        <field name="TEXT">you are weird</field>
       </block>
     </statement>
   </block>
-  <block type="movement_stutter" id="939" x="560" y="343"></block>
 </xml>
