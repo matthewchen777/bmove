@@ -7,8 +7,8 @@
       </block>
     </value>
     <value name="B">
-      <block type="math_number" id="418">
-        <field name="NUM">98876678999888870000</field>
+      <block type="math_number" id="419">
+        <field name="NUM">99</field>
       </block>
     </value>
   </block>
