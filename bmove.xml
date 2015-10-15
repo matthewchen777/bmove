@@ -2,18 +2,8 @@
   <block type="controls_whileUntil" id="489" inline="false" x="46" y="-72">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="logic_compare" id="532" inline="true">
-        <field name="OP">EQ</field>
-        <value name="A">
-          <block type="math_number" id="534">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="533">
-            <field name="NUM">1</field>
-          </block>
-        </value>
+      <block type="sensor_button" id="541">
+        <field name="OBJECT">LEFT</field>
       </block>
     </value>
     <statement name="DO">
