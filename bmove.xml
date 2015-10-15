@@ -1,15 +1,44 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="math_arithmetic" id="410" inline="true" x="194" y="-38">
-    <field name="OP">ADD</field>
-    <value name="A">
-      <block type="math_number" id="417">
-        <field name="NUM">9</field>
+  <block type="controls_whileUntil" id="489" inline="false" x="46" y="-72">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="532" inline="true">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_number" id="534">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="533">
+            <field name="NUM">1</field>
+          </block>
+        </value>
       </block>
     </value>
-    <value name="B">
-      <block type="math_number" id="419">
-        <field name="NUM">99</field>
+    <statement name="DO">
+      <block type="movement_forward" id="439">
+        <next>
+          <block type="movement_left" id="459">
+            <next>
+              <block type="robot_delay" id="461" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="462">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_reverse" id="449">
+                    <next>
+                      <block type="movement_stutter" id="499"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
-    </value>
+    </statement>
   </block>
 </xml>
