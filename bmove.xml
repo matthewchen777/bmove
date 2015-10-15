@@ -1,11 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="766" inline="false" x="-48" y="-54">
     <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_battery" id="919"></block>
-    </value>
     <statement name="DO">
-      <block type="movement_forward" id="929"></block>
+      <block type="oled_linerect" id="1088">
+        <field name="OBJECT">LINE</field>
+      </block>
     </statement>
   </block>
+  <block type="movement_stutter" id="939" x="560" y="343"></block>
 </xml>
