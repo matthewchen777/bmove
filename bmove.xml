@@ -1,27 +1,51 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="166" x="236" y="59">
-    <next>
-      <block type="robot_delay" id="183" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="190">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="315" inline="true" x="82" y="-45">
+    <value name="TIMES">
+      <block type="math_number" id="347">
+        <field name="NUM">5</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_reverse" id="237">
         <next>
-          <block type="movement_setmotors" id="201" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="208">
-                <field name="NUM">360</field>
+          <block type="robot_delay" id="254" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="267">
+                <field name="NUM">5000</field>
               </block>
             </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="209">
-                <field name="NUM">0</field>
+            <next>
+              <block type="movement_stop" id="277">
+                <next>
+                  <block type="movement_leftmotor" id="307" inline="true">
+                    <value name="MOVLEFT">
+                      <block type="math_number" id="308">
+                        <field name="NUM">360</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="325">
+                        <next>
+                          <block type="movement_rightmotor" id="335" inline="true">
+                            <value name="MOVRIGHT">
+                              <block type="math_number" id="336">
+                                <field name="NUM">360</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="346"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
