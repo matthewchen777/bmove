@@ -28,6 +28,9 @@
                         <field name="NUM">360</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="movement_stop" id="393"></block>
+                    </next>
                   </block>
                 </next>
               </block>
