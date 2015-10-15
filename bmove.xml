@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="1221">
-                <field name="TEXT">emily cao is crazy</field>
+                <field name="TEXT">mathew is stupid</field>
               </block>
             </next>
           </block>
